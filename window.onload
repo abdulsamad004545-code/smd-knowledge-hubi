@@ -1,0 +1,7 @@
+// Welcome message
+console.log("Welcome to SMD Knowledge Hub!");
+
+// Show a welcome message when the page loads
+window.onload = function () {
+    alert("Welcome to SMD Knowledge Hub! May Allah bless your learning.");
+};
