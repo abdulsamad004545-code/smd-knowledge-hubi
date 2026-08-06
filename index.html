@@ -1,103 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SMD Knowledge Hub</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMD Knowledge Hub</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
 
-<header>
-<h1>SMD Knowledge Hub</h1>
-<p>Learn • Grow • Succeed</p>
+  <div id="welcome-banner" class="welcome-banner">
+    <span>🌙 Welcome to SMD Knowledge Hub — may Allah bless your learning.</span>
+    <button id="welcome-close" aria-label="Close welcome message">&times;</button>
+  </div>
 
-<nav>
-<a href="#home">Home</a>
-<a href="#books">Books</a>
-<a href="#courses">Courses</a>
-<a href="#about">About</a>
-<a href="#contact">Contact</a>
-</nav>
-</header>
+  <header class="site-header">
+    <div class="header-inner">
+      <a href="#home" class="brand">
+        <span class="brand-mark" aria-hidden="true"></span>
+        SMD Knowledge Hub
+      </a>
 
-<section id="home">
-<h2>Welcome to SMD Knowledge Hub</h2>
+      <button id="nav-toggle" class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
 
-<p>
-Learn Islam, Technology and Online Business
-through easy books and courses.
-</p>
+      <nav id="site-nav" class="site-nav">
+        <a href="#home">Home</a>
+        <a href="#books">Books</a>
+        <a href="#courses">Courses</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
 
-<a href="#books">
-<button>Explore Books</button>
-</a>
-</section>
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-pattern" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Learn &middot; Grow &middot; Succeed</p>
+        <h1>Knowledge is a trust —<br>we help you carry it well.</h1>
+        <p class="lede">Learn Islam, Technology and Online Business through easy books and courses, built for busy learners who want practical results.</p>
+        <a href="#books" class="btn btn-primary">Explore Books</a>
+      </div>
+    </section>
 
-<section id="books">
-<h2>Our Books</h2>
+    <section id="books" class="section">
+      <div class="section-inner">
+        <p class="eyebrow">Our Books</p>
+        <h2>Reading that stays with you</h2>
 
-<div class="card">
-<h3>Muhimmancin Zikiri da Addu'o'i a Rayuwar Musulmi</h3>
+        <div class="card book-card reveal">
+          <div class="card-mark" aria-hidden="true">﷽</div>
+          <div class="card-body">
+            <h3>Muhimmancin Zikiri da Addu'o'i a Rayuwar Musulmi</h3>
+            <p>A practical Hausa guide to daily adhkar and authentic prayers — written for real life, not just the shelf.</p>
+            <a href="#contact" class="btn btn-outline">Buy Now</a>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<p>A practical Hausa guide to daily adhkar and authentic prayers.</p>
+    <section id="courses" class="section section-alt">
+      <div class="section-inner">
+        <p class="eyebrow">Courses</p>
+        <h2>Skills you can start using today</h2>
 
-<button>Buy Now</button>
-</div>
+        <div class="course-grid">
+          <div class="card course-card reveal">
+            <h3>Amazon KDP</h3>
+            <p>Learn how to publish books — from manuscript to marketplace.</p>
+          </div>
+          <div class="card course-card reveal">
+            <h3>AI Tools</h3>
+            <p>Learn ChatGPT, Gemini and Claude, and put them to work.</p>
+          </div>
+          <div class="card course-card reveal">
+            <h3>Affiliate Marketing</h3>
+            <p>Earn online step by step, with no guesswork.</p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</section>
+    <section id="about" class="section">
+      <div class="section-inner about-inner reveal">
+        <p class="eyebrow">About</p>
+        <h2>Why SMD Knowledge Hub</h2>
+        <p class="lede">SMD Knowledge Hub helps Muslims and students learn useful knowledge through books, courses and practical training — clear, honest, and built for real progress.</p>
+      </div>
+    </section>
 
-<section id="courses">
+    <section id="contact" class="section section-alt">
+      <div class="section-inner">
+        <p class="eyebrow">Contact</p>
+        <h2>Talk to us</h2>
+        <div class="contact-grid reveal">
+          <a class="contact-card" href="https://wa.me/2349151136605" target="_blank" rel="noopener">
+            <span class="contact-label">WhatsApp</span>
+            <span class="contact-value">+234 915 113 6605</span>
+          </a>
+          <a class="contact-card" href="mailto:abdulsamadbashir454562@gmail.com">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">abdulsamadbashir454562@gmail.com</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<h2>Courses</h2>
+  <footer class="site-footer">
+    <p>&copy; 2026 SMD Knowledge Hub. All Rights Reserved.</p>
+  </footer>
 
-<div class="card">
-<h3>Amazon KDP</h3>
-<p>Learn how to publish books.</p>
-</div>
-
-<div class="card">
-<h3>AI Tools</h3>
-<p>Learn ChatGPT, Gemini and Claude.</p>
-</div>
-
-<div class="card">
-<h3>Affiliate Marketing</h3>
-<p>Earn online step by step.</p>
-</div>
-
-</section>
-
-<section id="about">
-
-<h2>About</h2>
-
-<p>
-SMD Knowledge Hub helps Muslims and students
-learn useful knowledge through books,
-courses and practical training.
-</p>
-
-</section>
-
-<section id="contact">
-
-<h2>Contact</h2>
-
-<p><strong>WhatsApp:</strong> +2349151136605</p>
-
-<p><strong>Email:</strong> abdulsamadbashir454562@gmail.com</p>
-
-</section>
-
-<footer>
-
-<p>© 2026 SMD Knowledge Hub. All Rights Reserved.</p>
-
-</footer>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
